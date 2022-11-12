@@ -29,7 +29,7 @@ def launch_trin(private_key: bytes, port: int):
 
     short_node_id = node_id_hex[:10]
     trin_args = [
-        "./trin",
+        "./trin-main",
         # fmt: off
         "--discovery-port", str(port),
         "--unsafe-private-key", private_key_hex,
